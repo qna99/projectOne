@@ -1,0 +1,47 @@
+/*
+     .container{
+      border: rgb(7, 7, 7) ;
+      border-style: solid;
+      border-width: 1px; 
+     
+      
+      
+
+
+    }
+    .row{
+      border: crimson;
+      border-style: solid;
+      border-width: 0.5px; 
+
+
+    }
+    .col{
+      border:green;
+      border-style:dotted;
+      border-width: 0.5px; 
+
+
+    } 
+
+
+    
+      img{
+        border:1px solid rgb(248, 79, 79);
+        
+
+      }
+*/      
+    .Source{
+      background-color: crimson;
+
+    }
+    footer{
+        text-align: center;
+
+
+    }
+
+    
+    
+   
