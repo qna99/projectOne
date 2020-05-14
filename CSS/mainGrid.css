@@ -1,41 +1,39 @@
 .mainGrid {
-    display: grid;
-    grid-gap: 0rem;
-  }
-  
-  img {
-    width: 100%;
-    
-    
-  }
-  
-  .subMainGrid ul {
-    list-style: none;
-    margin-left: -2.5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
-  }
-  
-  /* for the main menu */
-  .subMainGrid a {
-    background-color: #e3c1a6;
-    display: block;
-    /* text-decoration: orangered; */
-    font-size: 1.5rem;
-    padding: 1rem;
-    color: #557a95;
-    text-align: center;
-    box-shadow: 0.1rem 0.2rem #928d94;
-  }
-  
-  /* reversing main menu */
-  .subMainGrid a:hover {
-    background-color: #557a95;
-    font-size: 3rem;
-    color: #e3c1a6;
-  }
-  .mainFlex{
+  display: grid;
+  grid-gap: 0rem;
+}
+
+img {
+  width: 100%;
+}
+
+.subMainGrid ul {
+  list-style: none;
+  margin-left: -2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+/* for the main menu */
+.subMainGrid a {
+  background-color: #e3c1a6;
+  display: block;
+  /* text-decoration: orangered; */
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #557a95;
+  text-align: center;
+  box-shadow: 0.1rem 0.2rem #928d94;
+}
+
+/* reversing main menu */
+.subMainGrid a:hover {
+  background-color: #557a95;
+  font-size: 3rem;
+  color: #e3c1a6;
+}
+.mainFlex {
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -43,29 +41,21 @@
   align-content: space-between;
   justify-content: space-between;
   /* border: 5px solid red; */
-  
-  }
-  .subMainFlex{
-    /* width: 10%; */
-    /* border: 5px solid yellow; */
-  }
-  .mainFlex img{
-    width: 8rem;
-  }
-  .mainFlex h1{
-    font-size: 4rem;
-    line-height: 4rem;
-
-  }
-  .logo{
-    /* align-self: flex-start; */
-    text-align: right;
-  }
-  .title{
-    align-self: flex-start;
-    
-  
-  }
-
-
-
+}
+.subMainFlex {
+  /* width: 10%; */
+  /* border: 5px solid yellow; */
+}
+.mainFlex img {
+  width: 8rem;
+}
+.mainFlex h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.logo {
+  text-align: right;
+}
+.title {
+  align-self: flex-start;
+}

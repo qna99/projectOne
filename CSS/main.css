@@ -1,4 +1,4 @@
-/* 
+/*  for testing
      .container{
       border: rgb(7, 7, 7) ;
       border-style: solid;
@@ -25,21 +25,11 @@
     } 
  */
 
-    
-     
-      
-    .Source{
-      background-color: crimson;
-
-    }
-    footer{
-        text-align: center;
-        margin-top: 2rem;
-        padding: 1rem;
-
-
-    }
-
-    
-    
-   
+.Source {
+  background-color: crimson;
+}
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
