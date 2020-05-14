@@ -1,0 +1,254 @@
+/* .mainFlex{
+    display: flex;
+    height: 100%;
+   
+
+    background-color: gold;
+}
+
+  */
+@import "../CSS/main.css";
+@import "../CSS/mainGrid.css";
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #557a95;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3rem 3rem;
+  line-height: 1.5rem;
+  background: #f4f7f6;
+  
+}
+
+
+/* for the main card */
+.mainCard {
+  display: grid;
+  /* grid-gap: 200px; */
+  /* background-color: orangered; */
+  /* grid-gap: 2rem; */
+  /* max-height: 40rem; */
+  grid-template-areas:
+    "B"
+    "B"
+    "B"
+    "M";
+  /* border: 5px solid red; */
+  box-shadow: 0.1rem 0rem #928d94;
+}
+.mainGrid video {
+width: 100%;
+height:auto;
+
+  /* height: 400px; */
+
+/* object-fit: fill; */
+/* border: 5px solid blue; */
+/* position: absolute; */
+/* overflow: hidden; */
+   /* top: 25%;
+   left: 25%;
+   transform: translate(-25%,-25%); */
+
+}
+
+
+
+
+
+.subMainCard {
+  grid-area: B;
+  /* background:  url(../IMAGES/typing.mp4); */
+  /* background-size: contain, cover; */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  /* background-position: center; */
+  /* min-height: 45rem; */
+  /* max-width: rem; */
+  /* border: 5px solid black; */
+}
+.videoText{
+  
+  grid-area: M;
+  /* border: 5px solid violet; */
+  grid-row-start: 3;
+  /* align-content: end; */
+  grid-row-end: 4;
+  position: relative;
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: #f4f7f6;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  padding: 1rem ;
+}
+
+.videoText h2{
+  margin-bottom: 0.5rem;
+  font-size: 4rem;
+}
+
+.restCards{
+display: grid;
+grid-gap: 1rem;
+grid-template-columns: repeat(auto-fit,minmax(17rem, 1fr));
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+.card{
+  background: #e3c1a6;
+  box-shadow: 0.1rem 0.2rem #928d94;
+  padding: 0.2rem ;
+  text-align: center;
+
+}
+
+.information{
+display: grid;
+grid-gap: 3rem;
+grid-template-columns: 3fr 2fr;
+margin-bottom: 1rem;
+background: #e3c1a6;
+box-shadow: 0.1rem 0.2rem #928d94;
+padding: 3rem ;
+text-align: justify;
+}
+
+.rand {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  margin-bottom: 1rem;
+}
+
+.rand img{
+  border: 0.2rem solid #e3c1a6;
+    box-shadow: 0.1rem 0.2rem #928d94;
+}
+
+
+
+/* color combinations to be use:
+#5D5C61
+#928D94
+#379683--
+#7395AE
+#557A95
+#B1A296 
+#e3c1a6
+*/
+
+
+@media (max-width: 750px){
+  body {
+    margin: 1rem 1rem;
+    line-height: 1rem;
+    
+    
+  }
+  .videoText{
+    font-size: 0.5rem;
+    padding: 0.5rem ;
+  }
+  
+  .videoText h2{
+    margin-bottom: 0.25rem;
+    font-size: 2rem;
+  }
+  .mainFlex{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    
+    
+    }
+    .subMainFlex{
+      width: 99%;
+      
+    }
+    .mainFlex img{
+      width: 6rem;
+      
+    }
+    .mainFlex h1{
+      font-size: 3rem;
+      line-height: 3rem;
+  
+    }
+    .logo{
+      text-align: center;
+    }
+    .subMainGrid ul {
+      grid-template-columns: 1fr;
+      grid-gap: 0.5rem;
+    }
+    .information{
+      
+      grid-gap: 1rem;
+      grid-template-columns: 1fr;
+      
+     
+      padding: 1rem ;
+      
+      }
+   
+}
+
+@media (max-width: 350px){
+  body {
+    margin: 0.5rem 0.5rem;
+    
+    
+    
+  }
+  .videoText{
+    font-size: 0.25rem;
+    padding: 0.25rem ;
+  }
+  
+  .videoText h2{
+    margin-bottom: 0.12rem;
+    font-size: 1rem;
+  }
+  .mainFlex h1{
+    font-size: 2rem;
+    line-height: 2rem;
+
+  }
+  .mainFlex{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    
+    }
+    .subMainFlex{
+      width: 99%;
+      
+    }
+    .mainFlex img{
+      width: 3rem;
+      
+    }
+    .logo{
+      text-align: center;
+    }
+    .subMainGrid ul {
+      grid-template-columns: 1fr;
+      grid-gap: 0.5rem;
+    }
+    .information{
+      
+      grid-gap: 0.5rem;
+      grid-template-columns: 1fr;
+      
+     
+      padding: 0.5rem ;
+      
+      }
+   
+}

@@ -1,4 +1,4 @@
-/*
+/* 
      .container{
       border: rgb(7, 7, 7) ;
       border-style: solid;
@@ -23,21 +23,19 @@
 
 
     } 
-
+ */
 
     
-      img{
-        border:1px solid rgb(248, 79, 79);
-        
-
-      }
-*/      
+     
+      
     .Source{
       background-color: crimson;
 
     }
     footer{
         text-align: center;
+        margin-top: 2rem;
+        padding: 1rem;
 
 
     }
