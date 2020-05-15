@@ -33,6 +33,12 @@ img {
   font-size: 3rem;
   color: #e3c1a6;
 }
+.subMainGrid a.currentPage {
+  background-color: #557a95;
+  font-size: 3rem;
+  color: #e3c1a6;
+  cursor: none;
+}
 .mainFlex {
   display: flex;
   flex-direction: row;

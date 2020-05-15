@@ -7,20 +7,8 @@
 #B1A296 
 #e3c1a6
 */
-@import "../CSS/main.css";
-@import "../CSS/mainGrid.css";
-html {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: #557a95;
-  box-sizing: border-box;
-}
 
-body {
-  margin: 3rem 3rem;
-  line-height: 1.5rem;
-  background: #f4f7f6;
-}
+@import "../CSS/mainGrid.css";
 
 /* for the main card */
 .mainCard {
@@ -33,7 +21,8 @@ body {
   /* border: 5px solid red; */
   box-shadow: 0.1rem 0rem #928d94;
 }
-.mainGrid video {
+
+.mainCard video {
   width: 100%;
   height: auto;
 }
@@ -41,6 +30,7 @@ body {
 .subMainCard {
   grid-area: B;
 }
+
 .videoText {
   grid-area: M;
   grid-row-start: 3;
@@ -67,6 +57,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .card {
   background: #e3c1a6;
   box-shadow: 0.1rem 0.2rem #928d94;
@@ -84,6 +75,14 @@ body {
   padding: 3rem;
   text-align: justify;
 }
+.information h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.information img {
+  border-radius: 1rem;
+}
 
 .rand {
   display: grid;
@@ -97,11 +96,42 @@ body {
   box-shadow: 0.1rem 0.2rem #928d94;
 }
 
+.button {
+  background: #557a95;
+  color: #e3c1a6;
+  line-height: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 1250px) {
+  .information p:nth-last-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .information {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media (max-width: 850px) {
+  .information h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
 @media (max-width: 750px) {
   body {
     margin: 1rem 1rem;
     line-height: 1rem;
   }
+
   .videoText {
     font-size: 0.5rem;
     padding: 0.5rem;
@@ -111,28 +141,35 @@ body {
     margin-bottom: 0.25rem;
     font-size: 2rem;
   }
+
   .mainFlex {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
   }
+
   .subMainFlex {
     width: 99%;
   }
+
   .mainFlex img {
     width: 6rem;
   }
+
   .mainFlex h1 {
     font-size: 3rem;
     line-height: 3rem;
   }
+
   .logo {
     text-align: center;
   }
+
   .subMainGrid ul {
     grid-template-columns: 1fr;
     grid-gap: 0.5rem;
   }
+
   .information {
     grid-gap: 1rem;
     grid-template-columns: 1fr;
@@ -145,6 +182,7 @@ body {
   body {
     margin: 0.5rem 0.5rem;
   }
+
   .videoText {
     font-size: 0.25rem;
     padding: 0.25rem;
@@ -154,28 +192,35 @@ body {
     margin-bottom: 0.12rem;
     font-size: 1rem;
   }
+
   .mainFlex h1 {
     font-size: 2rem;
     line-height: 2rem;
   }
+
   .mainFlex {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
   }
+
   .subMainFlex {
     width: 99%;
   }
+
   .mainFlex img {
     width: 3rem;
   }
+
   .logo {
     text-align: center;
   }
+
   .subMainGrid ul {
     grid-template-columns: 1fr;
     grid-gap: 0.5rem;
   }
+
   .information {
     grid-gap: 0.5rem;
     grid-template-columns: 1fr;
